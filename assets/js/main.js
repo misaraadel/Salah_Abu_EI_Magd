@@ -1,100 +1,100 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 700) {
-          $(".scroll-top-button").fadeIn();
-      } else {
-          $(".scroll-top-button").fadeOut();
-      }
+    if ($(this).scrollTop() > 700) {
+      $(".scroll-top-button").fadeIn();
+    } else {
+      $(".scroll-top-button").fadeOut();
+    }
   });
 
   $(function () {
-      $(document).scroll(function () {
-          var $nav = $(".navbar");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
   });
 
   $(".scroll-top-button").on('click', function () {
-      $('html , body').animate({
-          scrollTop: 0
-      }, 100);
+    $('html , body').animate({
+      scrollTop: 0
+    }, 100);
   });
 
   $('.hamburger').click(function(){
-      $('.hamburger').toggleClass('active');
-      $('.nav-contain').toggleClass('active-nav');
-      $('body').toggleClass('overflowNone')
+    $('.hamburger').toggleClass('active');
+    $('.nav-contain').toggleClass('active-nav');
+    $('body').toggleClass('overflowNone')
   });
 
   var swiper = new Swiper(".swiper-header", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
   var swiper = new Swiper(".swiper-courses", {
-      spaceBetween: 10,
-      freeMode: true,
-      loop: true,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+    spaceBetween: 10,
+    freeMode: true,
+    loop: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 18,
       },
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 18,
       },
-      breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 18,
-          },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 18,
       },
+    },
   });
 
   var swiper = new Swiper(".swiper-events", {
-      spaceBetween: 10,
-      freeMode: true,
-      loop: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
+    spaceBetween: 10,
+    freeMode: true,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 18,
       },
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 18,
       },
-      breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 18,
-          },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 18,
       },
+    },
   });
 
   var swiper = new Swiper(".swiper-blog", {

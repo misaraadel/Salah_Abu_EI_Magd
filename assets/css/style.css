@@ -353,6 +353,10 @@ html[dir=rtl] .contact-us .form-contain .form-group img {
   left: unset;
   right: 15px;
 }
+html[dir=rtl] .whatsapp-btn {
+  right: unset;
+  left: 20px;
+}
 
 :root {
   --primary-color: #199EBD;
@@ -2031,6 +2035,32 @@ footer .copyrights p {
 footer .copyrights p span {
   color: var(--primary-color);
   font-weight: 900;
+}
+
+.whatsapp-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #92974F;
+  border-radius: 6px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 998;
+  overflow: hidden;
+}
+.whatsapp-btn img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.whatsapp-btn:hover img {
+  -webkit-animation: fadeInLeft 0.3s linear both;
+          animation: fadeInLeft 0.3s linear both;
 }
 
 @media (max-width: 999px) {
