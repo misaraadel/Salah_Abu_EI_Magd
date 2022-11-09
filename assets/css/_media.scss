@@ -1,0 +1,289 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    .button-contain {
+      display: none;
+    }
+
+    .nav-contain {
+      width: 100% !important;
+      height: 100vh;
+      position: absolute;
+      padding: 20px 15px;
+      background: linear-gradient(90deg, #212121, #423D43);
+      z-index: 99;
+      top: 91px;
+      right: -100%;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      transition: all .3s linear;
+
+      .navbar-nav {
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-bottom: 15px;
+
+        li {
+          width: 100%;
+          margin: 0px !important;
+          padding: 10px 0px;
+          border-bottom: 1px solid rgba($color: #199EBD, $alpha: 0.2);
+  
+          &:last-child {
+            border-bottom: 0px !important;
+          }
+  
+          a {
+            width: 100%;
+
+            &::after, &::before {
+              display: none;
+            }
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+
+      &.active-nav {
+        right: 0px;
+      }
+    }
+
+    .brand-name img {
+      object-position: left !important;
+    }
+
+    &.scrolled {
+      .nav-contain {
+        top: 75px;
+      }
+
+      .contain {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+  }
+
+  html[dir="ltr"] {
+    .nav-contain {
+      left: -100%;
+      right: unset;
+
+      &.active-nav {
+        left: 0px;
+        right: unset;
+      }
+    }
+
+    header {
+      .scroll-arrow {
+        right: 30px;
+      }
+    }
+  }
+
+  .mobile-order-0 {
+    order: 0;
+  }
+
+  .mobile-order-1 {
+    order: 1;
+  }
+
+  header {
+    padding: 200px 0px 40px !important;
+
+    .swiper-slide {
+      padding-bottom: 50px;
+    }
+
+    &::after {
+      background-position: center;
+    }
+
+    h1 {
+      font-size: 30px !important;
+
+      span {
+        font-size: 30px !important;
+      }
+    }
+
+    .scroll-arrow {
+      left: 30px !important;
+    }
+  }
+
+  .courses .heading,
+  .heading {
+    margin-bottom: 30px !important;
+    width: 100% !important;
+
+    h1 {
+      font-size: 30px !important;
+
+      span {
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  .about  {
+    .heading {
+      position: relative !important;
+      top: unset !important;
+      left: unset !important;
+      margin-bottom: 40px !important;
+    }
+
+    .image-content {
+      height: 300px;
+      margin-top: 30px;
+
+      img {
+        object-position: center;
+      }
+    }
+  }
+
+  .general-section {
+    padding: 40px 0px;
+  }
+
+  .heading .see-more {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    justify-content: flex-end !important;
+    margin-top: 20px;
+    transform: translate(0px, 0px) !important;
+  }
+
+  .contact-now .contain {
+    padding: 0px 20px 20px;
+
+    .data {
+      margin-top: 20px;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      text-align: center;
+      align-content: center;
+
+      .head-contain {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .blog-box {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .image-content, .contain {
+      width: 100% !important;
+    }
+
+    .contain h2 {
+      padding-top: 20px;
+    }
+  }
+
+  .contact-us .form-contain {
+    padding: 30px 15px !important;
+  }
+
+  footer {
+    &::after {
+      background-position: center;
+    }
+
+    .copyrights p {
+      font-size: 14px !important;
+    }
+  }
+
+  .single-event {
+    padding-bottom: 40px;
+
+    .image-content,
+    .single-image {
+      height: 300px !important;
+    }
+
+    .event-name {
+      margin: 20px 0px;
+      padding: 20px 0px;
+
+      h1 {
+        font-size: 25px;
+      }
+    }
+
+    .contain {
+      padding: 30px 15px;
+      margin-bottom: 20px;
+
+      p {
+        margin-bottom: 15px !important;
+        font-size: 14px;
+      }
+    }
+
+    .share h2 {
+      font-size: 14px;
+      margin-inline-end: 10px;
+    }
+
+    .gallery-img {
+      height: 180px;
+    }
+  }
+
+  .sub-header {
+    h1 {
+      font-size: 20px !important;
+    }
+
+    span, a {
+      font-size: 12px !important;
+    }
+  }
+
+  .signle-course {
+    .image-content {
+      margin-bottom: 20px;
+      height: 300px !important;
+    }
+    .contain {
+      h1 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+
+  .blog .blog-box .contain {
+    padding-bottom: 10px !important;
+  }
+}
