@@ -90,6 +90,7 @@
     header {
       .scroll-arrow {
         right: 30px;
+        left: unset !important;
       }
     }
   }
@@ -120,8 +121,11 @@
         font-size: 30px !important;
       }
     }
+  }
 
-    .scroll-arrow {
+  html[dir="rtl"] {
+    header .scroll-arrow {
+      right: unset;
       left: 30px !important;
     }
   }

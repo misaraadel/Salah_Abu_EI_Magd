@@ -2135,6 +2135,7 @@ footer .copyrights p span {
   }
   html[dir=ltr] header .scroll-arrow {
     right: 30px;
+    left: unset !important;
   }
   .mobile-order-0 {
     order: 0;
@@ -2157,7 +2158,8 @@ footer .copyrights p span {
   header h1 span {
     font-size: 30px !important;
   }
-  header .scroll-arrow {
+  html[dir=rtl] header .scroll-arrow {
+    right: unset;
     left: 30px !important;
   }
   .courses .heading,
