@@ -219,9 +219,23 @@
       background-position: center;
     }
 
-    .copyrights p {
-      font-size: 14px !important;
+    .copyrights {
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin-bottom: 10px;
+        font-size: 13px !important;
+
+        span {
+          font-size: 12px !important;
+        }
+      }
     }
+  }
+
+  .whatsapp-btn {
+    bottom: 10px !important;
   }
 
   .single-event {

@@ -143,7 +143,7 @@
         </div>
       </section>
 
-      <div class="single-event">
+      <section class="single-event">
         <div class="container">
           <div class="single-image">
             <img src="assets/images/events/event_banner.webp" loading="lazy" alt="" />
@@ -154,12 +154,22 @@
               Event name of salah
             </h1>
 
-            <div class="date">
-              <img src="assets/images/icons/clock.svg" loading="lazy" alt="" />
+            <div class="flex-data">
+              <div class="date">
+                <img src="assets/images/icons/clock.svg" loading="lazy" alt="" />
+  
+                <span>
+                  15 Oct 2022
+                </span>
+              </div>
 
-              <span>
-                15 Oct 2022
-              </span>
+              <div class="date">
+                <img src="assets/images/icons/location.svg" loading="lazy" alt="" />
+  
+                <span>
+                  Egypt
+                </span>
+              </div>
             </div>
           </div>
 
@@ -179,6 +189,14 @@
             <p>
               His journey as an entrepreneur is continuing to be the CEO of ACTA for training & consultancy and founder of TMS the digital marketing & advertising agency for handling and helping a great bunch of multiple clients in the current market with the needed digital activities . 
             </p>
+
+            <a href="#" type="button" data-toggle="modal" data-target="#eventPopup" class="custom-btn primary-color">
+              <img src="assets/images/icons/arrow.svg" loading="lazy" alt="" />
+
+              <span>
+                Book Now
+              </span>
+            </a>
           </div>
 
           <div class="row">
@@ -231,7 +249,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -281,7 +299,6 @@
           </div>
         </div>
         
-
         <div class="copyrights">
           <p>
             All copyrights reserved to 
@@ -290,9 +307,104 @@
             </span>
             @ 2022 
           </p>
+
+          <a href="https://technoraft.com/" class="techno-raft">
+            <span>
+              Developed by
+            </span>
+
+            <img src="assets/images/techno-logo.png" loading="lazy" alt="TECHNORAFT SOFTWARE SOLUTIONS" />
+          </a>
         </div>
       </div>
     </footer>
+
+    <!--event popup-->
+    <div class="modal fade" id="eventPopup" tabindex="-1" aria-labelledby="eventPopup" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="heading">
+              <h1>
+                Book 
+                
+                <span>
+                  Now
+                </span>
+              </h1>
+
+              <p>
+                Attend Salah Courses In Sales And Other Fileds
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-12 mb-2">
+                <div class="image-content">
+                  <img src="assets/images/events/event_1.webp" loading="lazy" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <div class="contain">
+                  <h1>
+                    Event name of salah
+                  </h1>
+
+                  <p>
+                    Salah Abu EI-Magd is an entrepreneur with more than 15 years of experience in teaching, mindset building and training. He also has 2 masters in international business law and economics from Ain Shams University and IU Mckinney .
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form action="" class="form-contain">
+              <h1>
+                Send Message
+              </h1>
+
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="form-group">
+                    <img src="assets/images/icons/user.svg" loading="lazy" alt="" />
+
+                    <input type="text" placeholder="Your Name" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <div class="form-group">
+                    <img src="assets/images/icons/sms.svg" loading="lazy" alt="" />
+
+                    <input type="text" placeholder="Your Email" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group text-area">
+                    <img src="assets/images/icons/write.svg" loading="lazy" alt="" />
+
+                    <textarea name="" placeholder="Your Message " class="form-control" id="" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="button-contain">
+                    <a href="#" class="custom-btn primary-color">
+                      <img src="assets/images/icons/arrow.svg" loading="lazy" alt="" />
+
+                      <span>
+                        Send
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <a href="#" class="whatsapp-btn">
       <img src="assets/images/icons/whats.svg" loading="lazy" alt="" />
