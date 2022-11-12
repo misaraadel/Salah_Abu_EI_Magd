@@ -163,4 +163,13 @@ $(document).ready(function () {
       $('body, html').animate({scrollTop: scrollTo+'px'}, 900);
     }
   });
+
+  $('.contact-phone').click(function(e){
+    e.preventDefault();
+    var target = $($(this).attr('href'));
+    if(target.length){
+        var scrollTo = target.offset().top;
+      $('body, html').animate({scrollTop: scrollTo+'px'}, 900);
+    }
+  });
 });
