@@ -40,7 +40,6 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-courses", {
     spaceBetween: 10,
-    freeMode: true,
     loop: true,
     slidesPerView: "auto",
     centeredSlides: true,
@@ -70,7 +69,6 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-events", {
     spaceBetween: 10,
-    freeMode: true,
     loop: true,
     slidesPerView: 1,
     autoplay: {
@@ -99,7 +97,6 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-blog", {
     spaceBetween: 10,
-    freeMode: true,
     loop: true,
     slidesPerView: 1,
     autoplay: {
@@ -128,7 +125,6 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-clients", {
     spaceBetween: 10,
-    freeMode: true,
     loop: true,
     slidesPerView: 2,
     autoplay: {

@@ -2559,4 +2559,7 @@ footer .copyrights a span {
   .modal-dialog .form-contain h1 {
     margin: 0px 0px 20px 0px !important;
   }
+  .courses .course-box .contain {
+    padding: 40px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
