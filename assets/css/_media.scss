@@ -290,4 +290,18 @@
   .blog .blog-box .contain {
     padding-bottom: 10px !important;
   }
+
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 100px 0px 0px !important;
+
+    .modal-content {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .form-contain h1 {
+      margin: 0px 0px 20px 0px !important;
+    }
+  }
 }

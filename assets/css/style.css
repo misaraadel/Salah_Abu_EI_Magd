@@ -311,6 +311,7 @@ html[dir=rtl] .about .contain::after {
   left: 0px;
   right: unset;
 }
+html[dir=rtl] .course-box .see-more img,
 html[dir=rtl] footer::after,
 html[dir=rtl] .blog .blog-box .contain .see-more img,
 html[dir=rtl] .events .events-box .contain .see-more img {
@@ -332,14 +333,20 @@ html[dir=rtl] .heading .see-more .image-content img {
   -webkit-animation: translateXRtl 2s linear infinite;
           animation: translateXRtl 2s linear infinite;
 }
+html[dir=rtl] .courses .course-box .button-contain .see-more:hover img {
+  -webkit-animation: translateXRtl 2s linear infinite !important;
+          animation: translateXRtl 2s linear infinite !important;
+}
 html[dir=rtl] .sub-header .contain .list-data li::after,
 html[dir=rtl] .contact-now .contain .image-content img {
   transform: scaleX(-1);
   -webkit-animation: translateXRtl 2s linear infinite;
           animation: translateXRtl 2s linear infinite;
 }
+html[dir=rtl] .modal-dialog .modal-content::after,
+html[dir=rtl] .modal-dialog .contain h1::after,
 html[dir=rtl] .signle-course .contain h1::after,
-html[dir=rtl] .contact-us .form-contain h1::after,
+html[dir=rtl] .form-contain h1::after,
 html[dir=rtl] .courses .course-box .contain h2::after {
   left: unset;
   right: 0px;
@@ -349,7 +356,7 @@ html[dir=rtl] .courses .course-box .date {
   left: -20px;
 }
 html[dir=rtl] .sub-header .contain .list-data li::after,
-html[dir=rtl] .contact-us .form-contain .form-group img {
+html[dir=rtl] .form-contain .form-group img {
   left: unset;
   right: 15px;
 }
@@ -485,6 +492,11 @@ html[dir=rtl] .whatsapp-btn {
   color: var(--dark-color);
   margin-bottom: 10px;
   text-transform: capitalize;
+}
+.heading h1 span {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--primary-color);
 }
 .heading p {
   color: var(--gray-color);
@@ -1199,6 +1211,37 @@ header .scroll-arrow:hover img {
   font-weight: 500;
   margin: 20px 0px;
 }
+.courses .course-box .button-contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.courses .course-box .button-contain .see-more {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  z-index: 9;
+}
+.courses .course-box .button-contain .see-more img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 4px;
+          margin-inline-end: 4px;
+  filter: var(--light-filter);
+}
+.courses .course-box .button-contain .see-more span {
+  color: var(--light-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+.courses .course-box .button-contain .see-more:hover img {
+  -webkit-animation: translateX 1s linear infinite !important;
+          animation: translateX 1s linear infinite !important;
+}
 .courses .course-box:hover {
   transform: translateY(-10px);
 }
@@ -1603,7 +1646,8 @@ header .scroll-arrow:hover img {
   border: 1px solid rgba(75, 77, 74, 0.08);
   border-radius: 6px;
 }
-.contact-us .form-contain h1 {
+
+.form-contain h1 {
   font-size: 25px;
   font-weight: 900;
   color: var(--dark-color);
@@ -1612,7 +1656,7 @@ header .scroll-arrow:hover img {
   padding-bottom: 15px;
   margin-bottom: 50px;
 }
-.contact-us .form-contain h1::after {
+.form-contain h1::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -1623,25 +1667,25 @@ header .scroll-arrow:hover img {
   border-radius: 5px;
   transition: all 0.3s linear;
 }
-.contact-us .form-contain .form-group {
+.form-contain .form-group {
   width: 100%;
   height: 50px;
   margin-bottom: 18px;
   position: relative;
   z-index: 9;
 }
-.contact-us .form-contain .form-group.text-area {
+.form-contain .form-group.text-area {
   height: 100px;
   margin-bottom: 30px;
 }
-.contact-us .form-contain .form-group.text-area img {
+.form-contain .form-group.text-area img {
   top: 14px;
 }
-.contact-us .form-contain .form-group.text-area .form-control {
+.form-contain .form-group.text-area .form-control {
   padding-top: 17px !important;
   resize: none;
 }
-.contact-us .form-contain .form-group img {
+.form-contain .form-group img {
   width: 24px;
   height: 24px;
   -o-object-fit: contain;
@@ -1652,7 +1696,7 @@ header .scroll-arrow:hover img {
   z-index: 9;
   filter: var(--pimrary-filer);
 }
-.contact-us .form-contain .form-group .form-control {
+.form-contain .form-group .form-control {
   width: 100%;
   height: 100%;
   background-color: rgba(25, 158, 189, 0.06);
@@ -1664,29 +1708,29 @@ header .scroll-arrow:hover img {
   font-size: 16px;
   font-weight: 500;
 }
-.contact-us .form-contain .form-group .form-control::-moz-placeholder {
+.form-contain .form-group .form-control::-moz-placeholder {
   color: var(--gray-color);
   font-size: 16px;
   font-weight: 500;
 }
-.contact-us .form-contain .form-group .form-control:-ms-input-placeholder {
+.form-contain .form-group .form-control:-ms-input-placeholder {
   color: var(--gray-color);
   font-size: 16px;
   font-weight: 500;
 }
-.contact-us .form-contain .form-group .form-control::placeholder {
+.form-contain .form-group .form-control::placeholder {
   color: var(--gray-color);
   font-size: 16px;
   font-weight: 500;
 }
-.contact-us .form-contain .form-group:hover img {
+.form-contain .form-group:hover img {
   -webkit-animation: tada 0.3s linear both;
           animation: tada 0.3s linear both;
 }
-.contact-us .form-contain .form-group:hover .from-control {
+.form-contain .form-group:hover .from-control {
   border-color: rgba(25, 158, 189, 0.08);
 }
-.contact-us .form-contain .button-contain {
+.form-contain .button-contain {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2037,6 +2081,94 @@ footer .copyrights p span {
   font-weight: 900;
 }
 
+.modal.fade {
+  transform: translateY(20px);
+  transition: all 0.3s linear;
+  padding: 0px !important;
+}
+.modal.fade.show {
+  transform: translateY(0px);
+}
+
+.modal-dialog {
+  max-width: 60%;
+}
+.modal-dialog .modal-content {
+  border-color: transparent !important;
+  box-shadow: 0px 0px 10px rgba(25, 158, 189, 0.05);
+  border-radius: 10px !important;
+  z-index: 9;
+}
+.modal-dialog .modal-content::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  background: url("../images/logo/logo.svg") center/contain no-repeat;
+  top: 10px;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+.modal-dialog .heading {
+  margin-bottom: 30px !important;
+}
+.modal-dialog .image-content {
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.modal-dialog .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-dialog .contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.modal-dialog .contain h1 {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--dark-color);
+  position: relative;
+  z-index: 9;
+  padding-bottom: 15px;
+  margin: 0px;
+}
+.modal-dialog .contain h1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.modal-dialog .contain p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0px 0px;
+}
+.modal-dialog .form-contain {
+  margin-top: 20px;
+}
+.modal-dialog .form-contain h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px auto 20px;
+}
+
 .whatsapp-btn {
   width: 50px;
   height: 50px;
@@ -2286,5 +2418,16 @@ footer .copyrights p span {
   }
   .blog .blog-box .contain {
     padding-bottom: 10px !important;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+    margin: 100px 0px 0px !important;
+  }
+  .modal-dialog .modal-content {
+    margin: 0px;
+    padding: 0px;
+  }
+  .modal-dialog .form-contain h1 {
+    margin: 0px 0px 20px 0px !important;
   }
 }/*# sourceMappingURL=style.css.map */
