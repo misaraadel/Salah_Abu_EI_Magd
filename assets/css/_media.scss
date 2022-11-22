@@ -1,3 +1,24 @@
+@media (max-width: 1999px) and (min-width: 1000px) {
+  .navbar .contain .nav-contain {
+    .navbar-nav li {
+      margin-inline-end: 15px;
+  
+      a {
+        font-size: 13px;
+      }
+    }
+
+    .socail-media li a {
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
 @media (max-width: 999px) {
   .navbar {
     .hamburger {

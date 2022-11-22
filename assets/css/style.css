@@ -2313,6 +2313,23 @@ footer .copyrights a span {
           animation: fadeInLeft 0.3s linear both;
 }
 
+@media (max-width: 1999px) and (min-width: 1000px) {
+  .navbar .contain .nav-contain .navbar-nav li {
+    -webkit-margin-end: 15px;
+            margin-inline-end: 15px;
+  }
+  .navbar .contain .nav-contain .navbar-nav li a {
+    font-size: 13px;
+  }
+  .navbar .contain .nav-contain .socail-media li a {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar .contain .nav-contain .socail-media li a img {
+    width: 20px;
+    height: 20px;
+  }
+}
 @media (max-width: 999px) {
   .navbar .hamburger {
     display: block !important;
